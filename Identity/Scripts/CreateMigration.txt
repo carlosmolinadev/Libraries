@@ -1,0 +1,11 @@
+Add SnakeCase
+Install-Package Marques.EFCorev6.0.SnakeCase
+dotnet add package Marques.EFCorev6.0.SnakeCase
+
+Commands to create Migration and script
+dotnet ef migrations add InitialCreate --startup-project ../Template/Server/Template.Server.csproj
+dotnet ef migrations script 0 20230103045111_InitialCreate -o IdentityScript --startup-project ../Template/Server/Template.Server.csproj
+
+Other commands
+dotnet ef migrations script
+dotnet ef database update
